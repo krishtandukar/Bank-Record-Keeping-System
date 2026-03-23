@@ -8,7 +8,7 @@ struct record
     char address[40];
     char status[40];
 };
-int main()
+void main()
 {   
     //creating object of customers
     struct record rec[24];
@@ -18,7 +18,7 @@ int main()
     fp=fopen("record.txt","w");
     int i;
     //writing details to the file 
-    printf("Ener details of Customers : \n");
+    printf("Enter details of Customers : \n");
     for(i=0;i<24;i++)
     {
         printf("For customer no. %d : \n",i+1);
