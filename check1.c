@@ -16,7 +16,7 @@ void main()
     //file pointer to handle file operations 
     FILE *fp;
     int i;
-    //opening file in write mode
+    //opening file in read mode
     fp=fopen("record.txt","r");
     //checking if file opened successfully
     if (fp == NULL)
@@ -29,7 +29,7 @@ void main()
     {
         fscanf(fp,"%d %s %d %s %s",&rec[i].id,&rec[i].name,&rec[i].balance,&rec[i].address,&rec[i].status);
     }
-    //closing the file after writing 
+    //closing the file after reading 
     fclose(fp);
     //variables to track highest and lowest balance
     int maxIndex = 0;
