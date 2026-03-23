@@ -17,7 +17,7 @@ void main()
     FILE *fp;
     int i;
     //opening file in read mode 
-    fp = fopen("record.txt", "w");
+    fp = fopen("record.txt", "r");
     if (fp == NULL)
     {
         printf("Error opening file.\n");
